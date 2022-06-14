@@ -1,5 +1,5 @@
-var { Liquid } = require('liquidjs');
-var engine = new Liquid();
+var Liquid = require('liquidjs');
+var engine = Liquid();
 
 engine
     .parseAndRender('{{name | capitalize}}', {name: 'alice'})
